@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.touro.las.mcon364</groupId>
-    <artifactId>streams</artifactId>
+    <artifactId>threads</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
