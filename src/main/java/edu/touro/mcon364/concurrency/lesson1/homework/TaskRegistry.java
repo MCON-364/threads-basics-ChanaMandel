@@ -2,6 +2,7 @@ package edu.touro.mcon364.concurrency.lesson1.homework;
 
 import edu.touro.mcon364.concurrency.common.model.Task;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -19,7 +20,7 @@ import java.util.Optional;
  */
 public class TaskRegistry {
 
-    private final Map<Integer, Task> tasks = new HashMap<>();
+    private final Map<Integer, Task> tasks = Collections.synchronizedMap(new HashMap<>());
 
     public void add(Task task) {
         // TODO: make thread-safe
